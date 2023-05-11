@@ -1,4 +1,4 @@
-package kr.hs.dgsw.java;
+package kr.hs.dgsw.java.first;
 
 public class SchoolJob {
     public static void main(String[] args) {

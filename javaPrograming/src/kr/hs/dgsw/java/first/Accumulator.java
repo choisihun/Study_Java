@@ -1,4 +1,4 @@
-package kr.hs.dgsw.java;
+package kr.hs.dgsw.java.first;
 
 public class Accumulator {
     int sum = 0;
