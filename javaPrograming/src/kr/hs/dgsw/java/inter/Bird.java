@@ -1,6 +1,6 @@
 package kr.hs.dgsw.java.inter;
 
-public class Bird implements Sing{
+public class Bird implements Sing {
 
     @Override
     public void makeSound() {
