@@ -21,12 +21,8 @@ public class LinkedList implements List {
 
     @Override
     public void remove(int index) {
-        if (index < 0 || index >= size()) {
-            throw new IndexOutOfBoundsException("Invalid index: " + index);
-        }
 
         if (index == 0) {
-            // Removing the head nxode
             head = head.next;
         } else {
             Node node = head;
@@ -37,13 +33,15 @@ public class LinkedList implements List {
                 node = node.next;
             }
 
-            // Remove the node at the specified index
             previous.next = node.next;
         }
     }
 
     @Override
     public String get(int index) {
+        if (index < 0 || index >= size()) {
+            return null;
+        }
         Node node = head;
         for (int count = 0; count < index; count++) {
             node = node.next;
